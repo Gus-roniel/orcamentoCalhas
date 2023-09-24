@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="main">
+        <div id="lancamento">
+          <label for="servico">Escolha um serviço:</label> <br />
+          <select name="servico" id="servico">
+            <option class="servico" value="calha">calha</option>
+            <option class="servico" value="algerosa">algerosa</option>
+            <option class="servico" value="capamuro">capamuro</option>
+          </select>
+          <br />
+          <input type="text" id="metragem" /> <br />
+          <button onclick="selectService()">Salvar</button><br />
+        </div>
+        <div id="boxMain">
+          <div class="boxServices">
+            <h1>Valor total Calha</h1>
+            <p id="calha"></p>
+            <p id="totalCalha"></p>
+          </div>
+          <div class="boxServices">
+            <h1>Valor total Algerosa</h2>
+            <p id="algerosa"></p>
+            <p id="totalAlgerosa"></p>
+          </div>
+          <div class="boxServices">
+            <h1>Valor total Capamuro</h2>
+            <p id="capamuro"></p>
+            <p id="totalCapamuro"></p>
+          </div>
+        </div>
+        <h1>O valor total é:</h1>
+        <p id="valorTotal"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
